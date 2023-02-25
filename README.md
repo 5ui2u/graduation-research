@@ -8,7 +8,7 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 ## Requirement
 環境、必要なライブラリ
 - AutoPentest-DRL  
-AutoPentest-DRLとは、深層強化学習(DQN)手法に基づく自動侵入テストフレームワーク。本研究
+AutoPentest-DRLとは、深層強化学習(DQN)手法に基づく自動侵入テストフレームワーク。本研究ではペネトレーションテストの実行を行う。以下の外部ツールを用いる。外部ツールのインストールに関しては詳しくは、AutoPentest-DRL(https://github.com/crond-jaist/AutoPentest-DRL) のPrerequisitesに記述があり。
 - AutoPentest-DRL  
   - MulVAL  
   ターゲットネットワークの攻撃経路を生成するために使用する攻撃グラフのジェネレーター。AutoPentest-DRL   では、深層強化学習のインプットとして用いられ、潜在的な攻撃パスを特定する。
