@@ -10,7 +10,7 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 - AutoPentest-DRL
   - MulVAL
   - Nmap  
-  AutoPentest-DRL が特定の実際のネットワークの脆弱性を判断するために使用する
+  AutoPentest-DRL が特定の実際のネットワークの脆弱性を判断するために使用する。
   - Metasploit
 - Containernet
   - Ansible
@@ -24,5 +24,7 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 詳しい仕様
 
 ## Reference
-参考URL
+AutoPentest-DRL:https://github.com/crond-jaist/AutoPentest-DRL
+Containernet:https://github.com/containernet/containernet
+
 
