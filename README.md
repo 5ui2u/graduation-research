@@ -9,7 +9,7 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 環境、必要なライブラリ
 - AutoPentest-DRL
   - MulVAL
-  - Nmap
+  - Nmap  
   AutoPentest-DRL が特定の実際のネットワークの脆弱性を判断するために使用する
   - Metasploit
 - Containernet
