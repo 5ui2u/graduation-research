@@ -23,16 +23,17 @@ AutoPentest-DRLとは、深層強化学習(DQN)手法に基づく自動侵入テ
   MetasploitのWEBサイト(https://www.metasploit.com/) からダウンロード。
   
 - Containernet
-  - Ansible
-- topology_template  
+Containernetは、Mininetのネットワークエミュレータであり、Dockerを用いて、仮想のネットワークトポロジを生成することができる。したがって、Dockerイメージさえあれば、環境に依存せず、容易にネットワークトポロジを生成することができる。加えて、Dockerイメージからクライアントとサーバの追加・削除も行うことができるため、さまざまな形態のネットワークトポロジを生成することができる。
+
+  - topology_template  
 Containernetに用いるネットワークトポロジーのテンプレート。このテンプレートをベースに、さまざまなテスト環境を構築する。
-  - tp1
+    - tp1
   
-  - tp2
+    - tp2
   
-  - tp3
+    - tp3
   
-  - tp4
+    - tp4
 
 ## Usage
 簡単な使い方
