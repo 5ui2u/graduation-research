@@ -14,8 +14,12 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
   - Metasploit
 - Containernet
   - Ansible
-- topology_template
-
+- topology_template  
+Containernetに用いるネットワークトポロジーのテンプレート。このテンプレートをベースに、さまざまなテスト環境を構築する。
+  - tp1
+  - tp2
+  - tp3
+  - tp4
 
 ## Usage
 簡単な使い方
@@ -26,5 +30,5 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 ## Reference
 AutoPentest-DRL:https://github.com/crond-jaist/AutoPentest-DRL
 Containernet:https://github.com/containernet/containernet
-
+MulVAL:https://github.com/risksense/mulval
 
