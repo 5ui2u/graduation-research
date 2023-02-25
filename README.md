@@ -7,13 +7,15 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 
 ## Requirement
 環境、必要なライブラリ
-- AutoPentest-DRL
-  - MulVAL
+- AutoPentest-DRL  
+AutoPentest-DRLとは、深層強化学習(DQN)手法に基づく自動侵入テストフレームワーク。本研究
+- AutoPentest-DRL  
+  - MulVAL  
   ターゲットネットワークの攻撃経路を生成するために使用する攻撃グラフのジェネレーター。AutoPentest-DRL   では、深層強化学習のインプットとして用いられ、潜在的な攻撃パスを特定する。
   - Nmap  
   特定の実際のネットワークの脆弱性を判断するために使用する。  
   `sudo apt install nmap`
-  - Metasploit
+  - Metasploit  
   ペネトレーションテストの実行・自動化を行うソフトウェアである。AutoPentest-DRLでは、実際のターゲットネットワークでDRLエンジンによって提案された攻撃パスを実際に実行するための侵入テストツールとして用いる。  
   MetasploitのWEBサイト(https://www.metasploit.com/) からダウンロード。
 - Containernet
