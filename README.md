@@ -8,11 +8,11 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 ## Requirement
 環境、必要なライブラリ
 - AutoPentest-DRL
-  -MulVAL
-  -Nmap
-  -Metasploit
--Containernet
-  -
+  - MulVAL
+  - Nmap
+  - Metasploit
+- Containernet
+  - Ansible
 
 ## Usage
 簡単な使い方
