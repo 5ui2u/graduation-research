@@ -51,10 +51,13 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 ## Features
 詳しい仕様 
 ### Containernet
-
 - Dockerfileの作成方法
+1. DockerhubからベースとなるDockerイメージを取得(pull)
+2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
+3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールの記述
 
-- 
+- 注意点
+Containernet起動中にサーバの接続が切れたり、エラーによって実行できなかった場合は、Dockerコンテナだけ起動したままの状態になっているため、
 
 ### AutoPentest-DRL
 
@@ -65,6 +68,6 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ## Reference
 AutoPentest-DRL:https://github.com/crond-jaist/AutoPentest-DRL
-Containernet:https://github.com/containernet/containernet
+Containernet:https://github.com/containernet/containernet 
 MulVAL:https://github.com/risksense/mulval
 
