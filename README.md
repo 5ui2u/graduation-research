@@ -37,7 +37,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ## Usage
 1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
-`docker image build -t コンテナイメージ名`  
+`docker build -t コンテナイメージ名`  
 2. containernet/work内のcontainernet_xxx-test.pyを実行  
 `python3 containernet_xxx-test.py`   
 3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述  
@@ -63,7 +63,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
 3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールコマンドを記述
 4. DockerfileからDockerイメージを作成
-`docker build ./ -t example`
+`docker build -t コンテナイメージ名`
 
 
 - 注意点
