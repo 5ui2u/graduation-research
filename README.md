@@ -43,7 +43,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述  
 記述方法:ホスト名 IPアドレス 
 4. AutoPentest-DRL/MulVAL_P/real_topology_1.Pにターゲットネットワークの情報を記述 
-5. 別のターミナルでAutoPentest-DRL/AutoPentest-DRL.pyを実行(仮想ネットワーク環境のmetasploitのRPCサーバを通してAutoPentest-DRLを実行) 
+5. 別のターミナルでAutoPentest-DRL/AutoPentest-DRL.pyを実行(仮想ネットワーク環境のmetasploitのRPCサーバを通してAutoPentest-DRLを実行)  
 `python3 AutoPentest-DRL.py`
 
 ## Features
