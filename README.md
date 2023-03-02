@@ -80,7 +80,10 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ### AutoPentest-DRL
 - 変更点
-  - 
+  - Nmap_scan/scan_config.csv  
+  仮想ネットワーク環境の情報(ホスト名,IPアドレス)を記述  
+  記述方法:ホスト名 IPアドレス 
+  - MulVAL_P/real_topology_1.P
 - 注意点
 
 ## Consideration
