@@ -12,11 +12,11 @@ AutoPentest-DRLとは、深層強化学習(DQN)手法に基づく自動侵入テ
 
   - MulVAL  
   ターゲットネットワークの攻撃経路を生成するために使用する攻撃グラフのジェネレーター。AutoPentest-DRL   では、深層強化学習のインプットとして用いられ、潜在的な攻撃パスを特定する。  
-  `sudo apt install texlive-font-utils`
+  `apt install texlive-font-utils`
   
   - Nmap  
   特定の実際のネットワークの脆弱性を判断するために使用する。  
-  `sudo apt install nmap`
+  `apt install nmap`
   
   - Metasploit  
   ペネトレーションテストの実行・自動化を行うソフトウェアである。AutoPentest-DRLでは、実際のターゲットネットワークでDRLエンジンによって提案された攻撃パスを実際に実行するための侵入テストツールとして用いる。  
@@ -41,14 +41,18 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成 
 'docker image build -t xxxx/xxxx:latest .' 
 2. containernet/work内のcontainernet_xxx-test.pyを実行 
-'python3 containernet_xxx-test.py'
+'python3 containernet_xxx-test.py' 
 3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述
-記述方法:ホスト名 IPアドレス
-4. AutoPentest-DRL/MulVAL_P/real_topology_1.Pにターゲットネットワークの情報を記述
-5. 別のターミナルでAutoPentest-DRL/AutoPentest-DRL.pyを実行
+記述方法:ホスト名 IPアドレス 
+4. AutoPentest-DRL/MulVAL_P/real_topology_1.Pにターゲットネットワークの情報を記述 
+5. 別のターミナルでAutoPentest-DRL/AutoPentest-DRL.pyを実行 
+'python3 AutoPentest-DRL.py'
 
 ## Features
 詳しい仕様 
+# Containernet
+
+# AutoPentest-DRL
 
 ## Consideration
 考察 
