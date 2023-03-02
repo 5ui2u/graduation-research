@@ -71,6 +71,9 @@ Containernetに用いるネットワークトポロジーのテンプレート�
   コンテナの停止:`docker stop /コンテナ名`  
   コンテナの削除:`docker rm　/コンテナ名`  
 
+  - tcp dump等のツールを用いる場合はDockerFileに記述する必要がある
+  - ポートバインディングが設定によっては繋がらない場合があるため、コマンドやNmapで確認  
+  `sudo docker container port コンテナ名`
 
 ### AutoPentest-DRL
 
