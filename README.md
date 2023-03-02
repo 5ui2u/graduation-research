@@ -6,7 +6,6 @@ Deep Reinforcement Learning for Virtual Environments Penetration Testing
 仮想環境へのペネトレーションテストの実装と深層強化学習を用いたテストの自動化を目的に、ペネトレーションテストの実装を行う。Conteinernetによる仮想ネットワーク環境の構築を行い、そのテスト環境に対してAutoPentest-DRLを用いてペネトレーションテストを行う。
 
 ## Requirement
-環境、必要なライブラリ
 - AutoPentest-DRL  
 AutoPentest-DRLとは、深層強化学習(DQN)手法に基づく自動侵入テストフレームワーク。本研究ではペネトレーションテストの実行を行う。以下の外部ツールを用いる。外部ツールのインストールに関しては、AutoPentest-DRLのGithub(https://github.com/crond-jaist/AutoPentest-DRL) のPrerequisites参考。 
 
@@ -48,18 +47,21 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 'python3 AutoPentest-DRL.py'
 
 ## Features
-詳しい仕様 
 ### Containernet
 - 変更点
   - Dockerfile
   Dockerfileの記述については後述
   - containernet/work/containernet_xxx-test.py
     - dimage = "仮想ネットワーク内で用いるDockerイメージ"
+    - ports = [コンテナのポート番号]
+    - port_bindings = { ホストのポート番号: コンテナのポート番号}  
+    ポートバインディングを行うことで、実環境に対して実行を行うAutoPentest-DRLを仮想ネットワーク環境に対して実行可能とする
 
 - Dockerfileの作成方法
 1. DockerhubからベースとなるDockerイメージを取得(pull)
 2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
 3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールの記述
+4. 'docker build'でDockerfileからDockerイメージを作成
 
 
 - 注意点
@@ -70,6 +72,7 @@ Containernet起動中にサーバの接続が切れたり、エラーによっ�
 
 ## Consideration
 考察 
+ap-drlは実環境のみ
 
 
 ## Reference
