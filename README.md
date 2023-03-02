@@ -38,11 +38,11 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ## Usage
 簡単な使い方 
-1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成 
-'docker image build -t xxxx/xxxx:latest .' 
-2. containernet/work内のcontainernet_xxx-test.pyを実行 
-'python3 containernet_xxx-test.py' 
-3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述
+1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
+'docker image build -t xxxx/xxxx:latest .'  
+2. containernet/work内のcontainernet_xxx-test.pyを実行  
+'python3 containernet_xxx-test.py'  
+3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述  
 記述方法:ホスト名 IPアドレス 
 4. AutoPentest-DRL/MulVAL_P/real_topology_1.Pにターゲットネットワークの情報を記述 
 5. 別のターミナルでAutoPentest-DRL/AutoPentest-DRL.pyを実行(仮想ネットワーク環境のmetasploitのRPCサーバを通してAutoPentest-DRLを実行) 
@@ -67,7 +67,7 @@ Containernet起動中にサーバの接続が切れたり、エラーによっ�
 
 
 ## Reference
-AutoPentest-DRL:https://github.com/crond-jaist/AutoPentest-DRL 
-Containernet:https://github.com/containernet/containernet 
-MulVAL:https://github.com/risksense/mulval 
+AutoPentest-DRL:https://github.com/crond-jaist/AutoPentest-DRL  
+Containernet:https://github.com/containernet/containernet  
+MulVAL:https://github.com/risksense/mulval  
 
