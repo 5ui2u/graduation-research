@@ -37,7 +37,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ## Usage
 1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
-`docker image build -t xxxx/xxxx:latest .`  
+`docker image build -t xxxx/xxxx:latest`  
 2. containernet/work内のcontainernet_xxx-test.pyを実行  
 `python3 containernet_xxx-test.py`   
 3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述  
@@ -73,10 +73,13 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
   - tcp dump等のツールを用いる場合はDockerFileに記述する必要がある
   - ポートバインディングが設定によっては繋がらない場合があるため、コマンドやNmapで確認  
-  `sudo docker container port コンテナ名`
+    - `sudo docker container port コンテナ名`
+    - `nmap IPアドレス`
+    - `telnet IPアドレス　ポート番号`
 
 ### AutoPentest-DRL
-
+- 変更点
+- 注意点
 
 ## Consideration
 考察 
