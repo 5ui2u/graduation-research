@@ -37,7 +37,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ## Usage
 1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
-`docker image build -t xxxx/xxxx:latest`  
+`docker image build -t コンテナイメージ名`  
 2. containernet/work内のcontainernet_xxx-test.pyを実行  
 `python3 containernet_xxx-test.py`   
 3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述  
@@ -52,9 +52,9 @@ Containernetに用いるネットワークトポロジーのテンプレート�
   - Dockerfile  
   記述方法は、後述
   - containernet/work/containernet_xxx-test.py
-    - dimage = "仮想ネットワーク内で用いるDockerイメージ"
+    - dimage = " 仮想ネットワーク内で用いるDockerイメージ "
     - ports = [コンテナのポート番号]
-    - port_bindings = { ホストのポート番号: コンテナのポート番号}  
+    - port_bindings = { ホストのポート番号 : コンテナのポート番号 }  
     ポートバインディングを行うことで、実環境のみ実行可能なAutoPentest-DRLを仮想ネットワーク環境に対して実行可能とする  
     ポートバインディング(Port Binding):ネットワークにおいて、アプリケーションやサービスがネットワーク上で使用するポート番号を指定すること
 
@@ -72,6 +72,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
   コンテナの削除:`docker rm　/コンテナ名`  
 
   - tcp dump等のツールを用いる場合はDockerFileに記述する必要がある
+  
   - ポートバインディングが設定によっては繋がらない場合があるため、コマンドやNmapで確認  
     - `sudo docker container port コンテナ名`
     - `nmap IPアドレス`
@@ -79,6 +80,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 ### AutoPentest-DRL
 - 変更点
+  - 
 - 注意点
 
 ## Consideration
