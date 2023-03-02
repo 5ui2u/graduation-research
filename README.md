@@ -49,8 +49,8 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 ## Features
 ### Containernet
 - 変更点
-  - Dockerfile
-  後述
+  - Dockerfile  
+  記述方法は、後述
   - containernet/work/containernet_xxx-test.py
     - dimage = "仮想ネットワーク内で用いるDockerイメージ"
     - ports = [コンテナのポート番号]
