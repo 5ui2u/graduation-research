@@ -62,7 +62,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 1. DockerhubからベースとなるDockerイメージを取得(pull)
 2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
 3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールコマンドを記述
-4.  'docker build' でDockerfileからDockerイメージを作成
+4. ' docker build'でDockerfileからDockerイメージを作成
 
 
 - 注意点
