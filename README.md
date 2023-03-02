@@ -62,13 +62,15 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 1. DockerhubからベースとなるDockerイメージを取得(pull)
 2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
 3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールコマンドを記述
-4. `docker build`でDockerfileからDockerイメージを作成
+4. DockerfileからDockerイメージを作成
+`docker build ./ -t example`
 
 
 - 注意点
-Containernet起動中にサーバの接続が切れたり、エラーによって実行できなかった場合は、Dockerコンテナだけ起動したままの状態になっているため、起動中のコンテナを停止・削除する必要がある  
-コンテナの停止:``  
-コンテナの削除:``  
+  - Containernet起動中にサーバの接続が切れたり、エラーによって実行できなかった場合は、Dockerコンテナだけ起動したままの状態になっているため、起動中のコンテナを停止・削除する必要がある  
+  コンテナの停止:`docker stop /コンテナ名`  
+  コンテナの削除:`docker rm　/コンテナ名`  
+
 
 ### AutoPentest-DRL
 
