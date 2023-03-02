@@ -88,10 +88,12 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 
 - 注意点
   - AutoPentest-DRLは実際に攻撃を行い、脆弱性分析を行うため、慎重にテストを行う必要がある
-  - 仮想環境
+  - 変更するファイルに記述する情報は全て、仮想ネットワーク環境に関する情報を記述する
+  - localhostのmetasploitのRPCポートに対して、AutoPentest-DRLのmetasploitドライバで接続して実行を行う
 
 ## Consideration
-考察 
+
+
 ap-drlは実環境のみ
 ペネトレーションテストの問題点解決
 木村の研究で更なる自動化
