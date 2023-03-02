@@ -37,7 +37,6 @@ Containernetに用いるネットワークトポロジーのテンプレート�
   coapのクライアント・サーバで構成されたバス型のネットワークトポロジ。
 
 ## Usage
-簡単な使い方 
 1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
 'docker image build -t xxxx/xxxx:latest .'  
 2. containernet/work内のcontainernet_xxx-test.pyを実行  
@@ -55,6 +54,9 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 1. DockerhubからベースとなるDockerイメージを取得(pull)
 2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
 3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールの記述
+
+- 変更点
+  - dk
 
 - 注意点
 Containernet起動中にサーバの接続が切れたり、エラーによって実行できなかった場合は、Dockerコンテナだけ起動したままの状態になっているため、
