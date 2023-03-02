@@ -50,7 +50,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 ### Containernet
 - 変更点
   - Dockerfile
-  Dockerfileの記述については後述
+  後述
   - containernet/work/containernet_xxx-test.py
     - dimage = "仮想ネットワーク内で用いるDockerイメージ"
     - ports = [コンテナのポート番号]
@@ -61,7 +61,7 @@ Containernetに用いるネットワークトポロジーのテンプレート�
 - Dockerfileの作成方法
 1. DockerhubからベースとなるDockerイメージを取得(pull)
 2. ベースのDockerイメージを起動し、必要なライブラリのインストールの確認確認を行う
-3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールの記述
+3. 動作確認に問題なければ、Dockerfileに必要なライブラリのインストールコマンドを記述
 4. 'docker build'でDockerfileからDockerイメージを作成
 
 
