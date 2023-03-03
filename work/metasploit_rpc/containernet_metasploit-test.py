@@ -1,0 +1,38 @@
+#!/usr/bin/python
+"""
+This is the most simple example to showcase Containernet.
+"""
+from mininet.net import Containernet
+from mininet.node import Controller
+from mininet.cli import CLI
+from mininet.link import TCLink
+from mininet.log import info, setLogLevel
+setLogLevel('info')
+
+net = Containernet(controller=Controller)
+info('*** Adding controller\n')
+net.addController('c0')
+info('*** Adding docker containers\n')
+e1 = net.addDocker('e1', ip='10.0.0.251', dimage="my-coap-server:latest")
+e2 = net.addDocker('e2', ip='10.0.0.252', dimage="my-coap-client:latest")
+e3 = net.addDocker('e3', ip='10.0.0.253', dimage="metasploit_rpc:latest",
+        ports=[5683],
+        port_bindings={5683: 5683})
+info('*** Adding switches\n')
+s3 = net.addSwitch('s3')
+s4 = net.addSwitch('s4')
+info('*** Creating links\n')
+net.addLink(e1, s3)
+net.addLink(s3, s4, cls=TCLink, delay='100ms', bw=1)
+net.addLink(s4, e2)
+net.addLink(s4, e3)
+info('*** Starting network\n')
+net.start()
+info('*** Testing connectivity\n')
+net.ping([e1, e2])
+net.ping([e2, e3])
+net.ping([e1, e3])
+info('*** Running CLI\n')
+CLI(net)
+info('*** Stopping network')
+net.stop()
