@@ -92,12 +92,22 @@ Containernetに用いるネットワークトポロジーのテンプレート�
   - localhostのmetasploitのRPCポートに対して、AutoPentest-DRLのmetasploitドライバで接続して実行を行う
 
 ## Consideration
-localhostのmetasploitのRPCポートに対して、AutoPentest-DRLのmetasploitドライバで接続して実行を行う仕様としたが、AutoPentest-DRLのmetasploitドライバとContainernetのmetasploitの仕様が違うため、うまく実行することができなかった。Containernetによる仮想ネットワークの構築や仮想環境内のmetasploitサーバの実行は確認済みである。また、AutoPentest-DRL単体の実行も確認済みである。したがって、AutoPentest-DRLのmetasploitドライバの実装により、目標であったペネトレーションテストの完全な自動化が可能である。metasploitドライバの実装は、
+localhostのmetasploitのRPCポートに対して、AutoPentest-DRLのmetasploitドライバで接続して実行を行う仕様としたが、AutoPentest-DRLのmetasploitドライバとContainernetのmetasploitの仕様が違うため、うまく実行することができなかった。Containernetによる仮想ネットワークの構築や仮想環境内のmetasploitサーバの実行は確認済みである。また、AutoPentest-DRL単体の実行も確認済みである。したがって、AutoPentest-DRLのmetasploitドライバの実装により、目標であったペネトレーションテストの完全な自動化が可能である。metasploitドライバの実装は、tcpdumpによりパケットの形式を確認することで、実装可能である(MulVALのPファイル形式を用いるため、複雑になっている)。  
 
-ap-drlは実環境のみ
-ペネトレーションテストの問題点解決
-木村の研究で更なる自動化
-カオスエンジニアリング
+- 本研究のポイント
+  - ペネトレーションテストの問題点解決  
+    - 手間・費用がかかる点を解決するため、DockerFileから容易にテスト環境構築することができるContainernetを用いる
+    - テストに高度なスキルをもつ技術者を必要とする点を解決するため、ペネトレーションテストの自動化ツールであるAutoPentest-DRLを用いる
+  - AutoPentest-DRLは実環境に対してのみ実行可能であるため、Containernetの仮想環境に対しても実行が可能になるように実装する  
+    - ポートバインディング
+  - 今後の課題  
+    - 完全な自動化に至っていない  
+    AutoPentest-DRLの実行に手動で情報入力する必要がある(scan_config.csv等に手動で記述)  
+    木村の研究を用いることで情報入力がより簡単になる
+    - ペネトレーションテストには誤検知が多い  
+    新たな脆弱性分析の手法の提案
+
+
 
 
 ## Reference
