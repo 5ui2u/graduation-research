@@ -36,9 +36,9 @@ Containernetに用いるネットワークトポロジーのテンプレート�
   coapのクライアント・サーバで構成されたバス型のネットワークトポロジ
 
 ## Usage
-1. containernet/work内のDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
+1. workのDockerfileから、仮想ネットワーク環境構築に用いるコンテナイメージを作成  
 `docker build -t コンテナイメージ名`  
-2. containernet/work内のcontainernet_xxx-test.pyを実行  
+2. workのcontainernet_xxx-test.pyを実行  
 `python3 containernet_xxx-test.py`   
 3. AutoPentest-DRL/Nmap_scan/scan_config.csvに仮想ネットワーク環境のIPアドレス情報を記述  
 記述方法:ホスト名 IPアドレス 
